@@ -1,0 +1,65 @@
+footer, .footnav, .footnav--one, .footnav--two, .country {
+    display: flex;
+}
+
+.footnav--one, .footnav--two, .country {
+    align-items: center;
+    height: 3rem;
+}
+
+footer {
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 6rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+
+    .country {
+        border-bottom: 1px solid rgb(182, 182, 182);
+        padding-left: 1.5rem;
+        height: 3rem;
+
+        .country--text {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: rgb(119, 119, 119);
+        }
+    }
+
+    .footnav {
+        justify-content: space-between;
+
+        .footnav--one {
+            margin-left: 0.5rem;
+
+            .footnav--one-link {
+                color: rgb(119, 119, 119);
+            }
+
+            .footnav--one-item {
+                margin-left: 1rem;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .footnav--two {
+            margin-right: 0.5rem;
+
+            .footnav--two-link {
+                color: rgb(119, 119, 119);
+            }
+            
+            .footnav--two-item {
+                margin-right: 1rem;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
